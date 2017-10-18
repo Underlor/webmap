@@ -1,0 +1,22 @@
+IP: 192.168.1.177
+OS:
+	Computer_name: SB
+	Owner: kayzer
+	Windows Version: 6.1.7601
+	Install date: 12.05.2015
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: H61M-K
+CPU:
+	CPU Socket: LGA1155
+	Cpu model:         Intel(R) Pentium(R) CPU G2130 @ 3.20GHz
+	Cpu count: 2
+RAM:
+	Ram count: 3464
+	RAM_Manufacturer: Kingston
+HDD:  
+	Disk#0: TOSHIBA DT01ACA100 ATA Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: HPQOEM - 1072009

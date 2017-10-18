@@ -1,0 +1,22 @@
+IP: 10.4.0.160
+OS:
+	Computer_name: MANAGER
+	Owner: y.shmeleva
+	Windows Version: 6.1.7601
+	Install date: 27.08.2014
+Motherboard:
+	Motherboard Manufacturer: Intel Corporation
+	Motherboard Model: DH55HC
+CPU:
+	CPU Socket: XU1
+	Cpu model: Intel(R) Core(TM) i3 CPU         550  @ 3.20GHz
+	Cpu count: 4
+RAM:
+	Ram count: 1909
+	RAM_Manufacturer: Kingston        
+HDD:  
+	Disk#0: Hitachi HDS721050CLA362 ATA Device
+
+BIOS:
+	Bios Manufacturer: Intel Corp.
+	Bios version: INTEL  - 1072009

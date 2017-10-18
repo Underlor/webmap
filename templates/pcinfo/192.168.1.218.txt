@@ -1,0 +1,22 @@
+IP: 192.168.1.218
+OS:
+	Computer_name: URIST
+	Owner: kayzer
+	Windows Version: 6.1.7601
+	Install date: 16.03.2015
+Motherboard:
+	Motherboard Manufacturer: Intel Corporation
+	Motherboard Model: DG45ID
+CPU:
+	CPU Socket: LGA775
+	Cpu model: Intel(R) Core(TM)2 Quad CPU    Q8200  @ 2.33GHz
+	Cpu count: 4
+RAM:
+	Ram count: 3034
+	RAM_Manufacturer: Kingston        
+HDD:  
+	Disk#0: ST3320613AS ATA Device
+
+BIOS:
+	Bios Manufacturer: Intel Corp.
+	Bios version: INTEL  - 61

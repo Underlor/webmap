@@ -1,0 +1,22 @@
+IP: 192.168.1.181
+OS:
+	Computer_name: PC4
+	Owner: myakisheva
+	Windows Version: 6.1.7601
+	Install date: 09.09.2011
+Motherboard:
+	Motherboard Manufacturer: ASRock
+	Motherboard Model: H61M-DGS
+CPU:
+	CPU Socket: CPUSocket
+	Cpu model:         Intel(R) Core(TM) i3-3250 CPU @ 3.50GHz
+	Cpu count: 4
+RAM:
+	Ram count: 3485
+	RAM_Manufacturer: Kingston
+HDD:  
+	Disk#0: ST320DM000-1BD14C
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: _ASUS_ - 1072009

@@ -1,0 +1,22 @@
+IP: 10.4.0.192
+OS:
+	Computer_name: B3-KAEVI
+	Owner: Igor
+	Windows Version: 6.1.7601
+	Install date: 27.03.2014
+Motherboard:
+	Motherboard Manufacturer: ASRock
+	Motherboard Model: H81M-DGS
+CPU:
+	CPU Socket: CPUSocket
+	Cpu model: Intel(R) Pentium(R) CPU G3220 @ 3.00GHz
+	Cpu count: 2
+RAM:
+	Ram count: 3267
+	RAM_Manufacturer: 1337
+HDD:  
+	Disk#0: WDC WD5000AAKX-22ERM SCSI Disk Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: ALASKA - 1072009

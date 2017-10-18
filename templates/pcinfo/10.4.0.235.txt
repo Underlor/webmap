@@ -1,0 +1,22 @@
+IP: 10.4.0.235
+OS:
+	Computer_name: FINANCE
+	Owner: shihova
+	Windows Version: 10.0.14393
+	Install date: 19.05.2017
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: H170M-PLUS
+CPU:
+	CPU Socket: LGA1151
+	Cpu model: Intel(R) Core(TM) i3-7300 CPU @ 4.00GHz
+	Cpu count: 4
+RAM:
+	Ram count: 3951
+	RAM_Manufacturer: Kingston
+HDD:  
+	Disk#0: ST500DM009-2F110A
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: ALASKA - 1072009

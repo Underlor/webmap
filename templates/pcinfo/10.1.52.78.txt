@@ -1,0 +1,22 @@
+IP: 10.1.52.78
+OS:
+	Computer_name: CREATIVEPC1
+	Owner: kochurov
+	Windows Version: 6.3.9600
+	Install date: 13.04.2015
+Motherboard:
+	Motherboard Manufacturer: LENOVO
+	Motherboard Model: Lancer 5A6
+CPU:
+	CPU Socket: CPU 1
+	Cpu model:       Intel(R) Celeron(R) CPU  N2840  @ 2.16GHz
+	Cpu count: 2
+RAM:
+	Ram count: 3982
+	RAM_Manufacturer: 15
+HDD:  
+	Disk#0: ST500LT012-1DG142
+
+BIOS:
+	Bios Manufacturer: LENOVO
+	Bios version: LENOVO - 1

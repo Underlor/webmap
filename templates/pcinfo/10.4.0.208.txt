@@ -1,0 +1,22 @@
+IP: 10.4.0.208
+OS:
+	Computer_name: GLAVBUHPAVL
+	Owner: pavlenko
+	Windows Version: 6.1.7601
+	Install date: 21.04.2015
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: H61M-K
+CPU:
+	CPU Socket: LGA1155
+	Cpu model:         Intel(R) Pentium(R) CPU G2030 @ 3.00GHz
+	Cpu count: 2
+RAM:
+	Ram count: 3464
+	RAM_Manufacturer: 8502
+HDD:  
+	Disk#0: ST1000DM003-1ER162 ATA Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: HPQOEM - 1072009

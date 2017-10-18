@@ -1,0 +1,22 @@
+IP: 192.168.1.74
+OS:
+	Computer_name: DATABASE
+	Owner: kravchenko
+	Windows Version: 6.1.7601
+	Install date: 01.05.2015
+Motherboard:
+	Motherboard Manufacturer: Intel Corporation
+	Motherboard Model: DP55WB
+CPU:
+	CPU Socket: J1PR
+	Cpu model: Intel(R) Core(TM) i5 CPU         760  @ 2.80GHz
+	Cpu count: 4
+RAM:
+	Ram count: 16374
+	RAM_Manufacturer: 0x8502
+HDD:  
+	Disk#0: Volume0
+
+BIOS:
+	Bios Manufacturer: Intel Corp.
+	Bios version: INTEL  - 7a

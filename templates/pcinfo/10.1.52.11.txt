@@ -1,0 +1,22 @@
+IP: 10.1.52.11
+OS:
+	Computer_name: PRODNOUT
+	Owner: kayzer
+	Windows Version: 6.1.7601
+	Install date: 19.10.2016
+Motherboard:
+	Motherboard Manufacturer: Acer
+	Motherboard Model: Aspire 5560
+CPU:
+	CPU Socket: Socket FS1
+	Cpu model: AMD A6-3400M APU with Radeon(tm) HD Graphics
+	Cpu count: 4
+RAM:
+	Ram count: 5606
+	RAM_Manufacturer: Socket FS1
+HDD:  
+	Disk#0: WDC WD16 00BEVT-60ZCT0 SATA Disk Device
+
+BIOS:
+	Bios Manufacturer: Phoenix Technologies Ltd.
+	Bios version: ACRSYS - 1

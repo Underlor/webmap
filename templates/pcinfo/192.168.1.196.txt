@@ -1,0 +1,23 @@
+IP: 192.168.1.196
+OS:
+	Computer_name: DOMBROVSKY
+	Owner: dombrovsky
+	Windows Version: 6.1.7601
+	Install date: 15.05.2017
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: H61M-K
+CPU:
+	CPU Socket: LGA1155
+	Cpu model:         Intel(R) Core(TM) i3-3250 CPU @ 3.50GHz
+	Cpu count: 4
+RAM:
+	Ram count: 8070
+	RAM_Manufacturer: 8001
+HDD:  
+	Disk#0: ST1000DM003-1ER162 ATA Device
+	Disk#1: ST2000NC001-1DY164 ATA Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: _ASUS_ - 1072009

@@ -1,0 +1,22 @@
+IP: 10.90.90.2
+OS:
+	Computer_name: B1-CONTROL
+	Owner: exz
+	Windows Version: 6.3.9600
+	Install date: 15.07.2017
+Motherboard:
+	Motherboard Manufacturer: Microsoft Corporation
+	Motherboard Model: Virtual Machine
+CPU:
+	CPU Socket: None
+	Cpu model:        Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz
+	Cpu count: 4
+RAM:
+	Ram count: 4093
+	RAM_Manufacturer: Microsoft Corporation
+HDD:  
+	Disk#0: 8@BC0;L=K9 48A: (09:@>A>DB)
+
+BIOS:
+	Bios Manufacturer: Microsoft Corporation
+	Bios version: VRTUAL - 1

@@ -1,0 +1,22 @@
+IP: 192.168.1.208
+OS:
+	Computer_name: MAKSIMOVSKIH
+	Owner: Buh
+	Windows Version: 6.1.7601
+	Install date: 19.11.2014
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: B75M-A
+CPU:
+	CPU Socket: LGA1155
+	Cpu model:         Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+	Cpu count: 4
+RAM:
+	Ram count: 3457
+	RAM_Manufacturer: 8325
+HDD:  
+	Disk#0: ST500DM002-1BD142
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: ALASKA - 1072009

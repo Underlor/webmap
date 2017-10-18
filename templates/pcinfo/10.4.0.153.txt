@@ -1,0 +1,22 @@
+IP: 10.4.0.153
+OS:
+	Computer_name: SASHACOMP1
+	Owner: alexandra
+	Windows Version: 6.1.7601
+	Install date: 17.07.2014
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: H81M-PLUS
+CPU:
+	CPU Socket: SOCKET 1150
+	Cpu model: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+	Cpu count: 4
+RAM:
+	Ram count: 3453
+	RAM_Manufacturer: Kingston
+HDD:  
+	Disk#0: WDC WD5000AAKX-22ERM SCSI Disk Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: ALASKA - 1072009

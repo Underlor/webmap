@@ -1,0 +1,22 @@
+IP: 192.168.1.173
+OS:
+	Computer_name: SECRETAR
+	Owner: basok
+	Windows Version: 6.1.7601
+	Install date: 26.08.2014
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: P8H77-M LE
+CPU:
+	CPU Socket: LGA1155
+	Cpu model:         Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+	Cpu count: 4
+RAM:
+	Ram count: 3269
+	RAM_Manufacturer: Kingston
+HDD:  
+	Disk#0: ST1000DM003-1ER162 ATA Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: ALASKA - 1072009

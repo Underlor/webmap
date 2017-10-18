@@ -1,0 +1,22 @@
+IP: 192.168.1.199
+OS:
+	Computer_name: SHELKUSHKINA
+	Owner: shelkushkina
+	Windows Version: 10.0.14393
+	Install date: 06.10.2017
+Motherboard:
+	Motherboard Manufacturer: LENOVO
+	Motherboard Model: 0x30F617AA
+CPU:
+	CPU Socket: U3E1
+	Cpu model: Intel(R) Core(TM) i3-6100 CPU @ 3.70GHz
+	Cpu count: 4
+RAM:
+	Ram count: 4006
+	RAM_Manufacturer: Samsung
+HDD:  
+	Disk#0: KINGSTON SH103S3120G
+
+BIOS:
+	Bios Manufacturer: LENOVO
+	Bios version: LENOVO - 1180

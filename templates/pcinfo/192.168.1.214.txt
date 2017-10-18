@@ -1,0 +1,22 @@
+IP: 192.168.1.214
+OS:
+	Computer_name: WS-BRAGINA
+	Owner: braginav
+	Windows Version: 10.0.14393
+	Install date: 16.08.2017
+Motherboard:
+	Motherboard Manufacturer: Acer
+	Motherboard Model: Extensa M2710
+CPU:
+	CPU Socket: U3E1
+	Cpu model: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+	Cpu count: 4
+RAM:
+	Ram count: 8100
+	RAM_Manufacturer: Micron
+HDD:  
+	Disk#0: INTEL SSDSC2BW080A4
+
+BIOS:
+	Bios Manufacturer: Acer
+	Bios version: ACRSYS - 1072009

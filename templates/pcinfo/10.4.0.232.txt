@@ -1,0 +1,22 @@
+IP: 10.4.0.232
+OS:
+	Computer_name: KADRY
+	Owner: kogan
+	Windows Version: 6.1.7601
+	Install date: 04.04.2014
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK COMPUTER INC.
+	Motherboard Model: EB1035
+CPU:
+	CPU Socket: LGA1155
+	Cpu model:           Intel(R) Celeron(R) CPU 847 @ 1.10GHz
+	Cpu count: 2
+RAM:
+	Ram count: 3273
+	RAM_Manufacturer: Hynix/Hyundai
+HDD:  
+	Disk#0: ATA ST500LT012-9WS14 SCSI Disk Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: ALASKA - 1072009

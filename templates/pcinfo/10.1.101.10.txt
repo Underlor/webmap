@@ -1,0 +1,22 @@
+IP: 10.1.101.10
+OS:
+	Computer_name: B1-DC1
+	Owner: sa
+	Windows Version: 6.3.9600
+	Install date: 01.06.2017
+Motherboard:
+	Motherboard Manufacturer: Microsoft Corporation
+	Motherboard Model: Virtual Machine
+CPU:
+	CPU Socket: None
+	Cpu model:         Intel(R) Core(TM) i3-3210 CPU @ 3.20GHz
+	Cpu count: 1
+RAM:
+	Ram count: 2045
+	RAM_Manufacturer: Microsoft Corporation
+HDD:  
+	Disk#0: 8@BC0;L=K9 48A: (09:@>A>DB)
+
+BIOS:
+	Bios Manufacturer: Microsoft Corporation
+	Bios version: VRTUAL - 1

@@ -1,0 +1,22 @@
+IP: 10.1.52.35
+OS:
+	Computer_name: MANAGERBOOK
+	Owner: kupruhina
+	Windows Version: 6.1.7601
+	Install date: 15.09.2015
+Motherboard:
+	Motherboard Manufacturer: ASUSTeK Computer Inc.
+	Motherboard Model: K53SD
+CPU:
+	CPU Socket: CPU 1
+	Cpu model:        Intel(R) Core(TM) i3-2350M CPU @ 2.30GHz
+	Cpu count: 4
+RAM:
+	Ram count: 2600
+	RAM_Manufacturer: Elpida
+HDD:  
+	Disk#0: WDC WD3200BPVT-80JJ5T0 ATA Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: _ASUS_ - 6222004

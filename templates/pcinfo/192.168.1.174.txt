@@ -1,0 +1,22 @@
+IP: 192.168.1.174
+OS:
+	Computer_name: PRODUCTOIN1
+	Owner: UserWaste
+	Windows Version: 6.1.7601
+	Install date: 12.02.2015
+Motherboard:
+	Motherboard Manufacturer: Gigabyte Technology Co., Ltd.
+	Motherboard Model: G31M-ES2L
+CPU:
+	CPU Socket: Socket 775
+	Cpu model: Pentium(R) Dual-Core  CPU      E5500  @ 2.80GHz
+	Cpu count: 2
+RAM:
+	Ram count: 2037
+	RAM_Manufacturer:  
+HDD:  
+	Disk#0: ST3250318AS ATA Device
+
+BIOS:
+	Bios Manufacturer: Award Software International, Inc.
+	Bios version: GBT    - 42302e31

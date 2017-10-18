@@ -1,0 +1,22 @@
+IP: 10.1.52.15
+OS:
+	Computer_name: TOPMANAGER3
+	Owner: aldakov
+	Windows Version: 6.1.7601
+	Install date: 26.12.2013
+Motherboard:
+	Motherboard Manufacturer: PEGATRON CORPORATION
+	Motherboard Model:                       
+CPU:
+	CPU Socket: CPU 1
+	Cpu model:         Intel(R) Atom(TM) CPU D2700   @ 2.13GHz
+	Cpu count: 4
+RAM:
+	Ram count: 2034
+	RAM_Manufacturer: Micron
+HDD:  
+	Disk#0: KINGSTON SV300S37A120G ATA Device
+
+BIOS:
+	Bios Manufacturer: American Megatrends Inc.
+	Bios version: AMI    - 1072009
