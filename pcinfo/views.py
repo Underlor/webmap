@@ -31,16 +31,17 @@ class PcinfoTable(TemplateView):
                 for line in f:
                     file.append(line)
                 print(str(i) + ". " + f.name + "    |   " + file[2][file[2].rfind(':') + 1:len(file[2]) - 1])
-                PC.append(i)
-                PC.append(file[0][file[0].rfind(':') + 1:len(file[0]) - 1])
-                PC.append(file[2][file[2].rfind(':') + 1:len(file[2]) - 1])
-                PC.append(file[3][file[3].rfind(':') + 1:len(file[3]) - 1])
-                PC.append(file[4][file[4].rfind(':') + 1:len(file[4]) - 1])
                 try:
+                    PC.append(i)
+                    PC.append(file[0][file[0].rfind(':') + 1:len(file[0]) - 1])
+                    PC.append(file[2][file[2].rfind(':') + 1:len(file[2]) - 1])
+                    PC.append(file[3][file[3].rfind(':') + 1:len(file[3]) - 1])
+                    PC.append(file[4][file[4].rfind(':') + 1:len(file[4]) - 1])
                     PC.append(dparser.parse(file[5][file[5].rfind(':') + 1:len(file[5]) - 1]))
+                    PC.append(int(file[14][file[14].rfind(':') + 1:len(file[14]) - 1]))
+                    PC.append(file[11][file[11].rfind(':') + 1:len(file[11]) - 1])
                 except Exception as e:
                     print(e)
-                PC.append(int(file[14][file[14].rfind(':') + 1:len(file[14]) - 1]))
                 PCs.append(PC)
                 f.close()
                 # PC['IP'] =
@@ -54,6 +55,7 @@ class PcinfoTable(TemplateView):
 
         PCs.sort(key=sort_col)
         context['PCs'] = PCs
+        context['page'] = 0
         return context
 
 # Create your views here.

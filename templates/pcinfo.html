@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="grid.css">
+    {% include "HeaderLinks.html" %}
+
 </head>
 <body>
-<div class="container">
+{% include "navbar.html" %}
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <table class="table">
@@ -21,6 +21,7 @@
                     <th><a href="http://127.0.0.1:8000/list/4" class="text-info">Windows ver.</a></th>
                     <th><a href="http://127.0.0.1:8000/list/5" class="text-info">Windows install date</a></th>
                     <th><a href="http://127.0.0.1:8000/list/6" class="text-info">ОЗУ</a></th>
+                    <th class="text-info">Процессор</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -35,6 +36,7 @@
                             <td>{{ item.4 }}</td>
                             <td>{{ item.5 }}</td>
                             <td>{{ item.6 }} Mb</td>
+                            <td>{{ item.7 }}</td>
                             <div class="collapse" id="collapseExample">
                                 <div class="card card-block">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
