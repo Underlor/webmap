@@ -14,8 +14,8 @@ class PcinfoTable(TemplateView):
             Если мы получили GET запрос.
         """
         context = super(PcinfoTable, self).get_context_data(**kwargs)
-        # path = '\\\\b1-fileshare\\pcinfo'
-        path = 'templates\\pcinfo'
+        path = '\\\\b1-fileshare\\pcinfo'
+        # path = 'templates\\pcinfo'
         # f = open('C:\\Users\\admin\\PycharmProjects\\web_map\\templates\\pcinfo\\10.1.52.11.txt')
         files = []
         for d, dirs, fs in os.walk(path):
