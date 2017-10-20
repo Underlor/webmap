@@ -25,7 +25,7 @@
                 </thead>
                 <tbody>
                 {% for item in PCs %}
-                    <tr>
+                    <tr {% if item.0 in selected %}class="bg-info" {% endif %}>
                         <div>
 
                             <th scope="row">{{ item.0 }}</th>
