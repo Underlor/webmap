@@ -56,7 +56,7 @@ class PcinfoTable(TemplateView):
 
         PCs.sort(key=sort_col)
         context['PCs'] = PCs
-        context['selected'] = [5, 11, 14, 15, 19, 20, 21, 27]
+        context['selected'] = [5, 11, 14, 15, 20, 21, 27]
         context['page'] = 0
         return context
 

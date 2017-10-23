@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,13 +22,13 @@
                     <th><a href="/list/5" class="text-info">Windows install date</a></th>
                     <th><a href="/list/6" class="text-info">ОЗУ</a></th>
                     <th class="text-info">Процессор</th>
+                    <th class="text-info">Обновляется</th>
                 </tr>
                 </thead>
                 <tbody>
                 {% for item in PCs %}
-                    <tr {% if item.0 in selected %}class="bg-info" {% endif %}>
+                    <tr>
                         <div>
-
                             <th scope="row">{{ item.0 }}</th>
                             <td>{{ item.1 }}</td>
                             <td>{{ item.2 }}</td>
@@ -36,12 +37,11 @@
                             <td>{{ item.5 }}</td>
                             <td>{{ item.6 }} Mb</td>
                             <td>{{ item.7 }}</td>
+
+                            <td>{% if item.0 in selected %}<img style="width: 20px; height: 20px; margin-left: 30%;"
+                                                                src="{% static "img/checkbox.png" %}"/>{% endif %}
+                            </td>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-block">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                    cred nesciunt sapiente ea proident.
-                                </div>
                             </div>
                         </div>
                     </tr>
@@ -57,13 +57,14 @@
 </div>
 {#end of container#}
 </body>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
+{% include "footerlincs.html" %}
+{#<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"#}
+{#        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"#}
+{#        crossorigin="anonymous"></script>#}
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"#}
+{#        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"#}
+{#        crossorigin="anonymous"></script>#}
+{#<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"#}
+{#        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"#}
+{#        crossorigin="anonymous"></script>#}
 </html>

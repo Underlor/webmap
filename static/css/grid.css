@@ -1,0 +1,4 @@
+@font-face { src: url(../font/ubuntu.ttf)}
+.table tr{ background: #fbfbfb; border: #ffffff 2px solid;}
+h1, h2, h3, h4, h5, h6 {font-family: Ubuntu;}
+.table thead th{background-color: #f9f9f9; font-family: Ubuntu; border-bottom: #ffffff 2px solid; border-top: solid 2px #fff;}
