@@ -31,7 +31,7 @@ class PcinfoTable(TemplateView):
                 file = []
                 for line in f:
                     file.append(line)
-                print(str(i) + ". " + f.name + "    |   " + file[2][file[2].rfind(':') + 1:len(file[2]) - 1])
+                # print(str(i) + ". " + f.name + "    |   " + file[2][file[2].rfind(':') + 1:len(file[2]) - 1])
                 try:
                     PC.append(i)
                     PC.append(file[0][file[0].rfind(':') + 1:len(file[0]) - 1])
