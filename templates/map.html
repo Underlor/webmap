@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/map.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container map" data-id="0">
+    <canvas id="map_canvas">wtf?!</canvas>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Добавление нового устройства в схему</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="DeviceName">Имя устройства</label>
+                        <input class="form-control" id="DeviceName"
+                               placeholder="Например: SW001" value="Popov">
+                    </div>
+                    <div class="alert alert-danger" style="display:none;" role="alert" id="EmptyName">
+                        <strong>Введите имя устройства!</strong>
+                    </div>
+                    <div class="form-group">
+                        <label for="DeviceIP">IP адрес устройства</label>
+                        <input class="form-control" id="DeviceIP"
+                               placeholder="Например: 192.168.1.1" value="192.168.1.1">
+                    </div>
+                    <div class="alert alert-danger" style="display:none;" role="alert" id="EmptyIP">
+
+                        <strong>Введите адрес устройства!</strong>
+                    </div>
+                    <div class="alert alert-danger" style="display:none;" role="alert" id="BadIP">
+                        <strong>IP введен неверно!</strong> Адрес должен выглядеть так: 192.168.0.1.
+                    </div>
+                    <div class="alert alert-danger" style="display:none;" role="alert" id="ExistIP">
+                        <strong>Такой адрес уже есть в сети!</strong>
+                    </div>
+                    <div class="form-group">
+                        <label for="MainConnect">Подключено к устройству: </label>
+                        <select class="form-control" id="MainConnect">
+                            <option value="0">Нет подключения</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="DeviceType">Тип устройства: </label>
+                        <select class="form-control" id="DeviceType">
+                            <option value="0">ПК</option>
+                            <option value="1">Свитч(не управляемый)</option>
+                            <option value="2">Комутатор(управляемый)</option>
+                            <option value="3">Роутер</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary" OnClick="AddConfirm();">Добавить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Right_Click nav-->
+<nav id="context-menu" class="context-menu">
+    <ul class="context-menu__items">
+        <li class="context-menu__item">
+            <a href="#" class="context-menu__link" data-action="Add"><i class="fa fa-eye"></i> Add</a>
+        </li>
+        <li class="context-menu__item">
+            <a href="#" class="context-menu__link" data-action="Edit"><i class="fa fa-edit"></i> Edit</a>
+        </li>
+        <li class="context-menu__item">
+            <a href="#" class="context-menu__link" data-action="Delete"><i class="fa fa-times"></i> Delete</a>
+        </li>
+    </ul>
+</nav>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="js/fabric.js"></script>
+<script src="js/map_writer.js"></script>
+<script src="js/right_click_menu.js"></script>
+</html>

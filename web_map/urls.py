@@ -24,5 +24,7 @@ urlpatterns = [
     url(r'^$', MainPage.as_view(template_name="index.html")),
     url(r'^list/$', PcinfoTable.as_view(template_name="pcinfo.html")),
     url(r'^list/(?P<sort_id>[0-6]+)/$', PcinfoTable.as_view(template_name="pcinfo.html")),
+    url(r'^map/$', PcinfoTable.as_view(template_name="pcinfo.html")),
+    url(r'^support/$', PcinfoTable.as_view(template_name="pcinfo.html")),
 
 ]

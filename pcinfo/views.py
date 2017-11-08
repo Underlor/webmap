@@ -4,6 +4,7 @@ from django.views.generic import TemplateView
 import dateutil.parser as dparser
 import os.path, time
 
+
 class MainPage(TemplateView):
     pass
 
@@ -21,7 +22,6 @@ class PcinfoTable(TemplateView):
         for d, dirs, fs in os.walk(path):
             files = fs
         i = 0
-
 
         PCs = []
         for file in files:
@@ -61,7 +61,6 @@ class PcinfoTable(TemplateView):
             if not finder:
                 PCsOut.append(PCs[i])
 
-
         if "sort_id" in context:
             n = int(context['sort_id'])
         else:
@@ -76,4 +75,8 @@ class PcinfoTable(TemplateView):
         context['page'] = 0
         return context
 
-# Create your views here.
+
+class Support(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super(Support).get_context_data(**kwargs)
+        return context
