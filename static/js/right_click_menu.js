@@ -223,6 +223,12 @@
 
             })
         }
+        if (link.getAttribute("data-action") === "Add") {
+            $('#exampleModal').modal('show');
+            objs.forEach(function (item, i) {
+
+            })
+        }
         console.log("Task ID - " + taskItemInContext.getAttribute("data-id") + ", Task action - " + link.getAttribute("data-action"));
         toggleMenuOff();
     }

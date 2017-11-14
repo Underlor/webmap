@@ -15,8 +15,8 @@ class PcinfoTable(TemplateView):
             Если мы получили GET запрос.
         """
         context = super(PcinfoTable, self).get_context_data(**kwargs)
-        path = '\\\\b1-fileshare\\pcinfo'
-        # path = 'templates\\pcinfo'
+        # path = '\\\\b1-fileshare\\pcinfo'
+        path = 'templates\\pcinfo'
         # f = open('C:\\Users\\admin\\PycharmProjects\\web_map\\templates\\pcinfo\\10.1.52.11.txt')
         files = []
         for d, dirs, fs in os.walk(path):
@@ -72,7 +72,7 @@ class PcinfoTable(TemplateView):
         PCsOut.sort(key=sort_col)
         context['PCs'] = PCsOut
         context['selected'] = [5, 11, 14, 15, 20, 21, 27]
-        context['page'] = 0
+        context['page'] = 1
         return context
 
 

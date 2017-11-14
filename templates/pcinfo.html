@@ -7,9 +7,9 @@
     {% include "HeaderLinks.html" %}
 </head>
 <body>
+{% include "navbar.html" %}
 <div class="container-fluid">
     <div class="row">
-{% include "navbar.html" %}
         <div class="col">
             <table class="table">
                 <thead class="thead-inverse">
@@ -22,7 +22,9 @@
                     <th><a href="/list/5" class="text-info">Windows install date</a></th>
                     <th><a href="/list/6" class="text-info">ОЗУ</a></th>
                     <th class="text-info">Процессор</th>
+                    <th class="text-info"><a href="/list/8" class="text-info">Дата обновления данных!</a></th>
                     <th class="text-info">В утиль!</th>
+
                 </tr>
                 </thead>
                 <tbody>
@@ -37,10 +39,12 @@
                             <td>{{ item.5 }}</td>
                             <td>{{ item.6 }} Mb</td>
                             <td>{{ item.7 }}</td>
-
+                            <td>{{ item.8 }}</td>
                             <td>{% if item.0 in selected %}<img style="width: 20px; height: 20px; margin-left: 30%;"
                                                                 src="{% static "img/checkbox.png" %}"/>{% endif %}
                             </td>
+
+
                             <div class="collapse" id="collapseExample">
                             </div>
                         </div>

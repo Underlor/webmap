@@ -11,19 +11,19 @@ class Item {
 
         var size = {};
         if (this.type == 0) {
-            this.img = "imgs/PC.png";
+            this.img = PCimage;
             size = {x: 100, y: 80};
         }
         else if (this.type == 1) {
-            this.img = "imgs/ne.png";
+            this.img = NeImage;
             size = {x: 120, y: 50};
         }
         else if (this.type == 2) {
-            this.img = "imgs/sw.png";
+            this.img = SwImage;
             size = {x: 100, y: 50};
         }
         else if (this.type == 3) {
-            this.img = "imgs/router.png";
+            this.img = RtImgae;
             size = {x: 100, y: 110};
         }
         var name_text = new fabric.Text(name, {
@@ -41,29 +41,30 @@ class Item {
         fabric.Image.fromURL(this.img, (oImg) => {
 
             oImg.scaleToHeight(size.y);
-            oImg.scaleToWidth(size.x);
+        oImg.scaleToWidth(size.x);
 
-            oImg.hasControls = false;
-            this.group = new fabric.Group([oImg, name_text, ip_text]);
-            this.group.left = canvas.width / 2;
-            this.group.top = canvas.height / 2;
-            this.group.line1 = [];
-            this.group.line2 = [];
-            if (parent != 0) {
+        oImg.hasControls = false;
+        this.group = new fabric.Group([oImg, name_text, ip_text]);
+        this.group.left = canvas.width / 2;
+        this.group.top = canvas.height / 2;
+        this.group.line1 = [];
+        this.group.line2 = [];
+        if (parent != 0) {
 
-                var parent_item = getItemByIp(parent);
-                var line = makeLine([parent_item.group.left + parent_item.group.width / 2, parent_item.group.top + parent_item.group.height / 2, this.group.left + this.group.width / 2, this.group.top + this.group.height / 2]);
-                canvas.add(line);
-                parent_item.group.line1.push(null);
-                parent_item.group.line2.push(line);
-                this.group.line1.push(line);
-                this.group.line2.push(null);
-                line.sendBackwards();
-            }
-            canvas.add(this.group);
+            var parent_item = getItemByIp(parent);
+            var line = makeLine([parent_item.group.left + parent_item.group.width / 2, parent_item.group.top + parent_item.group.height / 2, this.group.left + this.group.width / 2, this.group.top + this.group.height / 2]);
+            canvas.add(line);
+            parent_item.group.line1.push(null);
+            parent_item.group.line2.push(line);
+            this.group.line1.push(line);
+            this.group.line2.push(null);
+            line.sendBackwards();
+        }
+        canvas.add(this.group);
 
-        });
-    }
+    })
+        ;
+     }
 }
 
 function getItemByIp(ip) {
@@ -90,6 +91,7 @@ function findIP(ip, parent) {
 }
 
 function AddConfirm() {
+
 
     if ($('#DeviceName').val() == "") {
         $('#EmptyName').show();
@@ -144,9 +146,11 @@ canvas.on('object:moving', function (e) {
     var p = e.target;
     p.line1.forEach((item) => {
         item && item.set({'x2': p.left + p.width / 2, 'y2': p.top + p.height / 2});
-    });
+})
+    ;
     p.line2.forEach((item) => {
         item && item.set({'x1': p.left + p.width / 2, 'y1': p.top + p.height / 2});
-    });
+})
+    ;
     canvas.renderAll();
 });

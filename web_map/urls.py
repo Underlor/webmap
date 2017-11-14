@@ -17,14 +17,19 @@ from django.conf.urls import url
 from django.contrib import admin
 
 import pcinfo
+from map.views import MapMain
 from pcinfo.views import PcinfoTable, MainPage
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', MainPage.as_view(template_name="index.html")),
+
+
     url(r'^list/$', PcinfoTable.as_view(template_name="pcinfo.html")),
-    url(r'^list/(?P<sort_id>[0-6]+)/$', PcinfoTable.as_view(template_name="pcinfo.html")),
-    url(r'^map/$', PcinfoTable.as_view(template_name="pcinfo.html")),
+    url(r'^list/(?P<sort_id>[0-6]|8)/$', PcinfoTable.as_view(template_name="pcinfo.html")),
     url(r'^support/$', PcinfoTable.as_view(template_name="pcinfo.html")),
+
+
+    url(r'^map/$', MapMain.as_view(template_name="map.html")),
 
 ]
