@@ -93,7 +93,7 @@ class TableGenerator(TemplateView):
 
         PCs = []
         for file in files:
-            # try:
+            try:
                 if file.split(".")[len(file.split(".")) - 1] == "txt":
                     i += 1
                     PC = []
@@ -120,8 +120,8 @@ class TableGenerator(TemplateView):
                     PCs.append(PC)
                     f.close()
                     # PC['IP'] =
-            # except Exception as e:
-            #     pass
+            except Exception as e:
+                pass
         PCsOut = []
         for i in range(len(PCs)):
             finder = False
