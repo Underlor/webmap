@@ -25,6 +25,7 @@ class PcinfoTable(TemplateView):
 
         PCs = []
         for file in files:
+            123
             if file.split(".")[len(file.split(".")) - 1] == "txt":
                 i += 1
                 PC = []
