@@ -119,7 +119,7 @@ class TableGenerator(TemplateView):
                     PCs.append(PC)
                     f.close()
                     # PC['IP'] =
-            except Exception:
+            except Exception as e:
                 pass
         PCsOut = []
         for i in range(len(PCs)):
