@@ -1,8 +1,15 @@
+import json
 import os
+
+from django.http import HttpResponse
 from django.shortcuts import render
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import TemplateView
 import dateutil.parser as dparser
 import os.path, time
+
+from pcinfo.models import PC, MOTHERBOARD, RAM, GPU, OS, HDD, CPU
 
 
 class MainPage(TemplateView):
@@ -148,7 +155,74 @@ class TableGenerator(TemplateView):
         context['page'] = 1
         return context
 
+
 class Support(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(Support).get_context_data(**kwargs)
         return context
+
+
+class DataGetter(TemplateView):
+    @method_decorator(csrf_exempt)
+    def dispatch(self, *args, **kwargs):
+        return super().dispatch(*args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        data = json.loads(request.body.decode('cp866'))
+        print(data)
+        pc = PC.objects.create(
+            ip=data['ip'],
+            bios_manufacturer=data['bios']['manifacturer'],
+            bios_version=data['bios']['version'],
+        )
+        for item in data['motherboard']:
+            pc.motherboard.add(MOTHERBOARD.objects.create(
+                name=data['motherboard'][item]['name'],
+                manufacturer=data['motherboard'][item]['manufacturer'],
+                chipset=data['motherboard'][item]['chipset'],
+                serial_number=data['motherboard'][item]['serial_number'],
+            ))
+        for item in data['ram']:
+            pc.ram.add(RAM.objects.create(
+                name=data['ram'][item]['name'],
+                manufacturer=data['ram'][item]['manufacturer'],
+                capacity=data['ram'][item]['capacity'],
+                form_factor=data['ram'][item]['form_factor'],
+                clock_speed=data['ram'][item]['clock_speed'],
+            ))
+        for item in data['gpu']:
+            pc.gpu.add(GPU.objects.create(
+                name=data['gpu'][item]['name'],
+                manufacturer=data['gpu'][item]['manufacturer'],
+                adapter_ram=data['gpu'][item]['adapter_ram'],
+                driver_version=data['gpu'][item]['driver_version'],
+                video_processor=data['gpu'][item]['video_processor'],
+            ))
+        for item in data['os']:
+            pc.os.add(OS.objects.create(
+                name=data['os'][item]['name'],
+                manufacturer=data['os'][item]['manufacturer'],
+                caption=data['os'][item]['caption'],
+                version=data['os'][item]['version'],
+                computer_name=data['os'][item]['computer_name'],
+                current_user=data['os'][item]['current_user'],
+                install_date=data['os'][item]['install_date'],
+                build_number=data['os'][item]['build_number'],
+                boot_device=data['os'][item]['boot_device'],
+                total_visible_memory=data['os'][item]['total_visible_memory'],
+                serial_number=data['os'][item]['serial_number'],
+            ))
+        for item in data['hdd']:
+            pc.hdd.add(HDD.objects.create(
+                name=data['hdd'][item]['name'],
+            ))
+        for item in data['cpu']:
+            pc.cpu.add(CPU.objects.create(
+                name=data['cpu'][item]['name'],
+                manufacturer=data['cpu'][item]['manufacturer'],
+                core_count=data['cpu'][item]['core_count'],
+                clock_speed=data['cpu'][item]['clock_speed'],
+                architecture=data['cpu'][item]['architecture'],
+            ))
+        pc.save()
+        return HttpResponse('OK')
